@@ -69,24 +69,26 @@ a {
   }
 }
 
-/* .col {
+.col {
   outline: 1px solid tomato;
 }
 
 .row {
   outline: 1px solid tomato;
-} */
+}
 
 /* ___________________________________________ */
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-bottom: 70px;
 }
 
 .padding-row {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .navbar {
   font-weight: 700;
   font-size: 15px;
@@ -97,6 +99,12 @@ a {
 .navigation-link {
   position: relative;
   color: #000000;
+}
+
+@media screen and (min-width: 1140px) {
+  .navbar .navigation-link:nth-last-child() {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width: 1390px) {
@@ -229,4 +237,60 @@ a {
   background-color: #ffff;
   border: 1px solid #ec0f16;
   border-radius: 5px;
+}
+
+/* __________Hero section___________ */
+
+.hero-slogan {
+  margin-bottom: 48px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.23;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.hero-slogan::after {
+  position: relative;
+  content: "";
+  top: 18px;
+  display: block;
+  max-width: 57px;
+  height: 1px;
+  background-color: #ec0f16;
+}
+
+.hero-title {
+  /* max-width: 600px; */
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.31;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.hero-list {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-list-button:not(:last-child) {
+  margin-right: 20px;
+}
+
+.hero-list-link {
+  padding: 48px 190px;
+  background-color: rgba(10, 9, 9, 1);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.2em;
+
+  color: #ffffff;
+}
+
+.buy {
+  background-image: url("../images/buy.jpg");
 }
