@@ -65,7 +65,7 @@ a {
 
 @media screen and (min-width: 1920px) {
   .container {
-    min-width: 1920px;
+    max-width: 1920px;
   }
 }
 
@@ -283,19 +283,28 @@ a {
   left: 35%;
 }
 
-.hero-list {
+/* .hero-list {
   display: flex;
   justify-content: center;
-}
+} */
 
-.hero-list-button:not(:last-child) {
-  margin-right: 20px;
-  /* background-color: #0a0909;
-  opacity: 0.72; */
+/* @media screen and (max-width: 1919px) {
+  .hero-list {
+    flex-wrap: wrap;
+  }
+} */
+
+@media screen and (max-width: 991px) {
+  .hero-list-link {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.6;
+  }
 }
 
 .hero-list-link {
-  padding: 35px 190px;
+  min-width: 427px;
+  padding: 35px 145px;
   background-color: rgba(10, 9, 9, 1);
 
   border-radius: 5px;
@@ -310,13 +319,19 @@ a {
 
 .hero-list-link::before {
   position: relative;
-  top: 20px;
-  right: 50px;
   content: "";
   display: inline-block;
+  bottom: 5px;
+  right: 150px;
   height: 1px;
   width: 24px;
   background-color: #ec0f16;
+}
+
+@media screen and (min-width: 992px) {
+  .hero-list-link::before {
+    right: 50px;
+  }
 }
 
 .buy {
@@ -329,12 +344,15 @@ a {
   background-image: url("../images/leasing.jpg");
 }
 
-.leasing::before {
-  right: 70px;
+@media screen and (max-width: 991px) {
+  .leasing::before {
+    right: 130px;
+  }
+  .auction::before {
+    right: 130px;
+  }
 }
+
 .auction {
   background-image: url("../images/auction.jpg");
-}
-.auction::before {
-  right: 70px;
 }
