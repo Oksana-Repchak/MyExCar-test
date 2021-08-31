@@ -94,7 +94,7 @@
     <section class="hero-section">
       <div class="container">
         <diw class="row">
-          <div class="row">
+          <div class="row row-margin">
             <div class="col-4">
               <p class="hero-slogan">we offer</p>
               <h1 class="hero-title">
@@ -103,8 +103,14 @@
               </h1>
             </div>
             <div class="col">
-              <img src="./images/car2.png" alt="car" />
-              <img src="./images/car1.png" alt="car" />
+              <div class="car-wrapper">
+                <img class="car-images" src="./images/car2.png" alt="car" />
+                <img
+                  class="car-images gray"
+                  src="./images/car1.png"
+                  alt="car"
+                />
+              </div>
             </div>
           </div>
           <div class="row">
@@ -113,13 +119,13 @@
                 <a class="hero-list-link buy" href="">Buy</a>
               </li>
               <li class="hero-list-button">
-                <a class="hero-list-link" href="">Sell</a>
+                <a class="hero-list-link sell" href="">Sell</a>
               </li>
               <li class="hero-list-button">
-                <a class="hero-list-link" href="">Leasing</a>
+                <a class="hero-list-link leasing" href="">Leasing</a>
               </li>
               <li class="hero-list-button">
-                <a class="hero-list-link" href="">Auction</a>
+                <a class="hero-list-link auction" href="">Auction</a>
               </li>
             </ul>
           </div>

@@ -12,7 +12,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #ffff;
+  background-color: #f3f1f1;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 1.2;
@@ -193,6 +193,7 @@ a {
   border: none;
   border-bottom: 1px solid #000000;
   padding: 15px;
+  background-color: transparent;
 }
 
 .button-search {
@@ -234,13 +235,15 @@ a {
   border: none;
   padding: 15px 61px;
   color: #ec0f16;
-  background-color: #ffff;
+  background-color: transparent;
   border: 1px solid #ec0f16;
   border-radius: 5px;
 }
 
 /* __________Hero section___________ */
-
+.row-margin {
+  margin-bottom: 188px;
+}
 .hero-slogan {
   margin-bottom: 48px;
   font-weight: 500;
@@ -261,12 +264,23 @@ a {
 }
 
 .hero-title {
-  /* max-width: 600px; */
   font-weight: 700;
   font-size: 64px;
   line-height: 1.31;
   text-transform: uppercase;
   color: #000000;
+}
+
+.car-wrapper {
+  position: relative;
+}
+
+.car-images {
+  position: absolute;
+}
+
+.car-images.gray {
+  left: 35%;
 }
 
 .hero-list {
@@ -276,11 +290,14 @@ a {
 
 .hero-list-button:not(:last-child) {
   margin-right: 20px;
+  /* background-color: #0a0909;
+  opacity: 0.72; */
 }
 
 .hero-list-link {
-  padding: 48px 190px;
+  padding: 35px 190px;
   background-color: rgba(10, 9, 9, 1);
+
   border-radius: 5px;
   font-weight: 700;
   font-size: 16px;
@@ -291,6 +308,33 @@ a {
   color: #ffffff;
 }
 
+.hero-list-link::before {
+  position: relative;
+  top: 20px;
+  right: 50px;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 24px;
+  background-color: #ec0f16;
+}
+
 .buy {
   background-image: url("../images/buy.jpg");
+}
+.sell {
+  background-image: url("../images/sell.jpg");
+}
+.leasing {
+  background-image: url("../images/leasing.jpg");
+}
+
+.leasing::before {
+  right: 70px;
+}
+.auction {
+  background-image: url("../images/auction.jpg");
+}
+.auction::before {
+  right: 70px;
 }
