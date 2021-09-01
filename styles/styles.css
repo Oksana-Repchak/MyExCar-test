@@ -161,6 +161,7 @@ a {
   color: #000000;
   padding: 10px;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .navigation-link::before {
@@ -230,6 +231,7 @@ a {
 
 .button-header.login {
   color: #ec0f16;
+  transition: all 0.5s ease;
 }
 .button-header.login:hover {
   color: #cd1319;
@@ -275,6 +277,7 @@ a {
   font-weight: 700;
   color: #000000;
   margin-right: 48px;
+  transition: all 0.5s ease;
 }
 .tel-link:hover {
   color: #cd1319;
@@ -282,6 +285,7 @@ a {
 
 .tel-icon {
   margin-right: 15px;
+  transition: all 0.5s ease;
 }
 .tel-link:hover .tel-icon {
   fill: #cd1319;
@@ -296,6 +300,7 @@ a {
   border-radius: 5px;
   font-weight: 600;
   text-align: center;
+  transition: all 0.5s ease;
 }
 
 .button-used:hover {
@@ -421,6 +426,7 @@ a {
   letter-spacing: 0.2em;
 
   color: #ffffff;
+  transition: all 0.5s ease;
 }
 
 /* .car-animation {
