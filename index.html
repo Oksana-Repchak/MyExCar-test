@@ -12,108 +12,111 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="mobile-menu data-menu">
-          <div class="row position-relative">
-            <div class="col-lg-2 text-center">
-              <a href=""
-                ><img class="logo" src="./images/logo.svg" alt="Logo"
-              /></a>
-            </div>
+        <div class="wrapper-mobi-button">
+          <button class="button-search-mobi" type="submit">
+            <svg width="24" height="24" aria-label="search icon">
+              <use href="./images/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
 
-            <div class="col-lg-1 col-mobile-swich">
-              <button
-                type="button"
-                class="menu-button"
-                aria-expanded="false"
-                aria-controls="menu-container"
-                data-menu-button
-              >
-                <svg width="24" height="24" aria-label="Mobile menu switch">
-                  <use
-                    class="icon-cross"
-                    href="./images/sprite.svg#icon-menu_close"
-                  ></use>
-                  <use
-                    class="icon-menu"
-                    href="./images/sprite.svg#icon-menu_alt"
-                  ></use>
-                </svg>
-              </button>
-            </div>
-            <div class="col">
-              <div class="row padding-row align-items-center">
-                <ul class="col-lg-2 col-lg-8 navigation">
-                  <li class="navigation-item">
-                    <a class="navigation-link" href="#">HOME</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="navigation-link" href="#">ABOUT US</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="navigation-link" href="#">SPECIALS</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="navigation-link" href="#">USED CARS</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="navigation-link" href="#">SERVICES</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="navigation-link" href="#">APPLICATIONS</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="navigation-link" href="#">AUCTION</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="navigation-link" href="#">CONTACT US</a>
-                  </li>
-                </ul>
+          <div class="col-lg-1 col-mobile-swich">
+            <button
+              type="button"
+              class="menu-button"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button
+            >
+              <svg width="24" height="24" aria-label="Mobile menu switch">
+                <use
+                  class="icon-cross"
+                  href="./images/sprite.svg#icon-menu_close"
+                ></use>
+                <use
+                  class="icon-menu"
+                  href="./images/sprite.svg#icon-menu_alt"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="row position-relative">
+          <div class="col-lg-2 text-center">
+            <a href=""
+              ><img class="logo" src="./images/logo.svg" alt="Logo"
+            /></a>
+          </div>
 
-                <div class="col-lg-2 text-end">
-                  <p class="language">
-                    <span class="lang-eng">ENG</span> &vert;
-                    <span class="lang-ru">RU</span>
-                  </p>
-                </div>
+          <div class="col mobile-menu" data-menu>
+            <div class="row padding-row align-items-center">
+              <ul class="col-lg-2 col-lg-8 navigation">
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">HOME</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">ABOUT US</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">SPECIALS</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">USED CARS</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">SERVICES</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">APPLICATIONS</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">AUCTION</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">CONTACT US</a>
+                </li>
+              </ul>
 
-                <div class="col-lg-2 text-end">
-                  <button class="button-header login">Log in</button>
-                  <button class="button-header registration">
-                    Registration
-                  </button>
-                </div>
+              <div class="col-lg-2 text-end">
+                <p class="language">
+                  <span class="lang-eng">ENG</span> &vert;
+                  <span class="lang-ru">RU</span>
+                </p>
               </div>
-              <div class="row padding-row">
-                <div class="col-lg">
-                  <form class="d-flex">
-                    <input
-                      class="search-form"
-                      type="search"
-                      placeholder="Start searching"
-                      aria-label="Search"
-                    />
-                    <button class="button-search" type="submit">
-                      <svg width="24" height="24" aria-label="search icon">
-                        <use href="./images/sprite.svg#icon-search"></use>
-                      </svg>
-                    </button>
-                  </form>
-                </div>
 
-                <div class="col-lg text-end">
-                  <svg width="24" height="24" aria-label="phone icon">
-                    <use href="./images/sprite.svg#icon-phone"></use>
-                  </svg>
-                  <a href="tel:+9998887766" class="tel-link">999 888 77 66</a>
-                  <button class="button-used">Used Cars</button>
-                  <button class="button-sell">Sell Your Car</button>
-                </div>
+              <div class="col-lg-2 text-end">
+                <button class="button-header login">Log in</button>
+                <button class="button-header registration">Registration</button>
+              </div>
+            </div>
+            <div class="row padding-row">
+              <div class="col-lg">
+                <form class="d-flex">
+                  <input
+                    class="search-form"
+                    type="search"
+                    placeholder="Start searching"
+                    aria-label="Search"
+                  />
+                  <button class="button-search" type="submit">
+                    <svg width="24" height="24" aria-label="search icon">
+                      <use href="./images/sprite.svg#icon-search"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+
+              <div class="col-lg text-end">
+                <svg width="24" height="24" aria-label="phone icon">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                <a href="tel:+9998887766" class="tel-link">999 888 77 66</a>
+                <button class="button-used">Used Cars</button>
+                <button class="button-sell">Sell Your Car</button>
               </div>
             </div>
           </div>
@@ -122,7 +125,7 @@
     </header>
     <section class="hero-section">
       <div class="container">
-        <diw class="row">
+        <diw class="row car-animation">
           <div class="row row-margin">
             <div class="col-lg-4">
               <p class="hero-slogan">we offer</p>
@@ -144,22 +147,23 @@
           </div>
           <ul class="row gy-4 hero-list text-center">
             <li class="col hero-list-button">
-              <a class="hero-list-link buy" href="">Buy</a>
+              <a class="hero-list-link buy"> Buy</a>
             </li>
             <li class="col hero-list-button">
-              <a class="hero-list-link sell" href="">Sell</a>
+              <a class="hero-list-link sell">Sell</a>
             </li>
             <li class="col hero-list-button">
-              <a class="hero-list-link leasing" href="">Leasing</a>
+              <a class="hero-list-link leasing">Leasing</a>
             </li>
             <li class="col hero-list-button">
-              <a class="hero-list-link auction" href="">Auction</a>
+              <a class="hero-list-link auction">Auction</a>
             </li>
           </ul>
         </diw>
       </div>
     </section>
 
+    <script src="./js/menu.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
