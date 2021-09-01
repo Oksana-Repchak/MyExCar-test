@@ -89,36 +89,59 @@ a {
   padding-bottom: 20px;
 }
 
-.navbar {
+/* mobile menu */
+.menu-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .col-mobile-swich {
+    display: none;
+  }
+}
+
+.navigation {
   font-weight: 700;
   font-size: 15px;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1000px) {
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .navigation-link {
   position: relative;
   color: #000000;
-}
-
-@media screen and (min-width: 1140px) {
-  .navbar .navigation-link:nth-last-child() {
-    margin-right: 10px;
-  }
-}
-
-@media screen and (max-width: 1390px) {
-  .navigation-link {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+  padding: 10px;
+  cursor: pointer;
 }
 
 .navigation-link::before {
   position: absolute;
   content: "";
-
-  /* left: 0; */
   bottom: 57px;
   display: block;
   width: 100%;
@@ -127,9 +150,10 @@ a {
   display: none;
 }
 
-/* .navigation-link :hover .navigation-link::after {
+.navigation-link :hover .navigation-link::after {
   display: block;
-} */
+}
+
 .navigation-link:hover {
   color: #000000;
 }
@@ -155,9 +179,6 @@ a {
     min-width: 150px;
   }
 }
-
-/* .language {
-} */
 
 .lang-eng {
   font-weight: 700;
@@ -196,11 +217,24 @@ a {
   background-color: transparent;
 }
 
+@media screen and (max-width: 999px) {
+  .search-form {
+    display: none;
+  }
+}
+
 .button-search {
   position: relative;
   right: 50px;
   background: transparent;
   border: none;
+}
+@media screen and (max-width: 999px) {
+  .button-search {
+    position: absolute;
+    top: 65px;
+    left: 10%;
+  }
 }
 
 .tel-link {
@@ -242,8 +276,15 @@ a {
 
 /* __________Hero section___________ */
 .row-margin {
-  margin-bottom: 188px;
+  margin-bottom: 100px;
 }
+
+@media screen and (min-width: 1920px) {
+  .row-margin {
+    margin-bottom: 188px;
+  }
+}
+
 .hero-slogan {
   margin-bottom: 48px;
   font-weight: 500;
@@ -265,34 +306,43 @@ a {
 
 .hero-title {
   font-weight: 700;
-  font-size: 64px;
-  line-height: 1.31;
+  font-size: 24px;
   text-transform: uppercase;
   color: #000000;
+  line-height: 1.31;
 }
 
-.car-wrapper {
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 34px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .hero-title {
+    font-size: 64px;
+  }
 }
 
 .car-images {
   position: absolute;
 }
 
+@media screen and (max-width: 999px) {
+  .car-images {
+    max-width: 259px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1919px) {
+  .car-images {
+    max-width: 444px;
+  }
+}
+
 .car-images.gray {
   left: 35%;
 }
-
-/* .hero-list {
-  display: flex;
-  justify-content: center;
-} */
-
-/* @media screen and (max-width: 1919px) {
-  .hero-list {
-    flex-wrap: wrap;
-  }
-} */
 
 @media screen and (max-width: 991px) {
   .hero-list-link {

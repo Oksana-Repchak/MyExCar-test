@@ -18,73 +18,102 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="row">
-          <div class="col-2 text-center">
-            <a href=""
-              ><img class="logo" src="./images/logo.svg" alt="Logo"
-            /></a>
-          </div>
-          <div class="col">
-            <div class="row padding-row align-items-center">
-              <ul class="col-8 navbar">
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">HOME</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">ABOUT US</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">SPECIALS</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">USED CARS</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">SERVICES</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">APPLICATIONS</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">AUCTION</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">CONTACT US</a>
-                </li>
-              </ul>
-
-              <div class="col-2 text-end">
-                <p class="language">
-                  <span class="lang-eng">ENG</span> &vert;
-                  <span class="lang-ru">RU</span>
-                </p>
-              </div>
-
-              <div class="col-2 text-end">
-                <button class="button-header login">Log in</button>
-                <button class="button-header registration">Registration</button>
-              </div>
+        <div class="mobile-menu data-menu">
+          <div class="row position-relative">
+            <div class="col-lg-2 text-center">
+              <a href=""
+                ><img class="logo" src="./images/logo.svg" alt="Logo"
+              /></a>
             </div>
-            <div class="row padding-row">
-              <div class="col">
-                <form class="d-flex">
-                  <input
-                    class="search-form"
-                    type="search"
-                    placeholder="Start searching"
-                    aria-label="Search"
-                  />
-                  <button class="button-search" type="submit">
-                    <img src="./images/search.svg" alt="search icon" />
-                  </button>
-                </form>
-              </div>
 
-              <div class="col col text-end">
-                <img src="./images/phone.svg" alt="search icon" />
-                <a href="tel:+9998887766" class="tel-link">999 888 77 66</a>
-                <button class="button-used">Used Cars</button>
-                <button class="button-sell">Sell Your Car</button>
+            <div class="col-lg-1 col-mobile-swich">
+              <button
+                type="button"
+                class="menu-button"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button
+              >
+                <svg width="24" height="24" aria-label="Mobile menu switch">
+                  <use
+                    class="icon-cross"
+                    href="./images/sprite.svg#icon-menu_close"
+                  ></use>
+                  <use
+                    class="icon-menu"
+                    href="./images/sprite.svg#icon-menu_alt"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+            <div class="col">
+              <div class="row padding-row align-items-center">
+                <ul class="col-lg-2 col-lg-8 navigation">
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">HOME</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">ABOUT US</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">SPECIALS</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">USED CARS</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">SERVICES</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">APPLICATIONS</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">AUCTION</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">CONTACT US</a>
+                  </li>
+                </ul>
+
+                <div class="col-lg-2 text-end">
+                  <p class="language">
+                    <span class="lang-eng">ENG</span> &vert;
+                    <span class="lang-ru">RU</span>
+                  </p>
+                </div>
+
+                <div class="col-lg-2 text-end">
+                  <button class="button-header login">Log in</button>
+                  <button class="button-header registration">
+                    Registration
+                  </button>
+                </div>
+              </div>
+              <div class="row padding-row">
+                <div class="col-lg">
+                  <form class="d-flex">
+                    <input
+                      class="search-form"
+                      type="search"
+                      placeholder="Start searching"
+                      aria-label="Search"
+                    />
+                    <button class="button-search" type="submit">
+                      <svg width="24" height="24" aria-label="search icon">
+                        <use href="./images/sprite.svg#icon-search"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+
+                <div class="col-lg text-end">
+                  <svg width="24" height="24" aria-label="phone icon">
+                    <use href="./images/sprite.svg#icon-phone"></use>
+                  </svg>
+                  <a href="tel:+9998887766" class="tel-link">999 888 77 66</a>
+                  <button class="button-used">Used Cars</button>
+                  <button class="button-sell">Sell Your Car</button>
+                </div>
               </div>
             </div>
           </div>
@@ -95,15 +124,15 @@
       <div class="container">
         <diw class="row">
           <div class="row row-margin">
-            <div class="col-4">
+            <div class="col-lg-4">
               <p class="hero-slogan">we offer</p>
               <h1 class="hero-title">
                 reliable <br />
                 and favorable conditions
               </h1>
             </div>
-            <div class="col">
-              <div class="car-wrapper">
+            <div class="col-lg">
+              <div class="position-relative">
                 <img class="car-images" src="./images/car2.png" alt="car" />
                 <img
                   class="car-images gray"
@@ -113,7 +142,6 @@
               </div>
             </div>
           </div>
-          <!-- <div class="row"> -->
           <ul class="row gy-4 hero-list text-center">
             <li class="col hero-list-button">
               <a class="hero-list-link buy" href="">Buy</a>
@@ -128,7 +156,6 @@
               <a class="hero-list-link auction" href="">Auction</a>
             </li>
           </ul>
-          <!-- </div> -->
         </diw>
       </div>
     </section>
