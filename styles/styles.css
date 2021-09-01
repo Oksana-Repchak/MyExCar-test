@@ -118,7 +118,7 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 300px) and (max-width: 999px) {
+@media screen and (min-width: 10px) and (max-width: 999px) {
   .mobile-menu {
     position: absolute;
     display: none;
@@ -219,7 +219,8 @@ a {
   display: inline-block;
   height: 2px;
   bottom: 5px;
-  background-color: #000000;
+  background-image: url("../images/line.jpg");
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 1920px) {
@@ -248,6 +249,12 @@ a {
   font-weight: 700;
   font-size: 15px;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+  .button-header {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 999px) {
@@ -314,7 +321,15 @@ a {
   color: #000000;
   transition: all 0.5s ease;
   text-align: center;
+  grid-row-start: 3;
 }
+
+@media screen and (max-width: 999px) {
+  .tel-link {
+    margin-top: 20px;
+  }
+}
+
 @media screen and (min-width: 1199px) {
   .tel-link {
     margin-right: 48px;
