@@ -85,17 +85,17 @@ a {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .wrapper-mobi-button {
+    display: none;
+  }
+}
+
 .button-search-mobi {
   background: transparent;
   border: none;
   width: 24px;
   height: 24px;
-}
-
-@media screen and (min-width: 1000px) {
-  .wrapper-mobi-button {
-    display: none;
-  }
 }
 
 .menu-button {
@@ -118,21 +118,20 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (min-width: 300px) and (max-width: 999px) {
   .mobile-menu {
     position: absolute;
-    z-index: 10;
     display: none;
+    z-index: 10;
     top: 100%;
     left: 0;
     width: 100%;
     background-color: #f3f1f1;
     text-align: center;
   }
-}
-
-.mobile-menu.is-open {
-  display: block;
+  .mobile-menu.is-open {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -159,10 +158,19 @@ a {
 
 .navigation-link {
   position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
   color: #000000;
   padding: 10px;
   cursor: pointer;
   transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 1000px) {
+  .navigation-link {
+    font-weight: 700;
+  }
 }
 
 .navigation-link::before {
@@ -199,6 +207,11 @@ a {
 
 .language {
   cursor: pointer;
+}
+@media screen and (max-width: 999px) {
+  .language {
+    text-align: center;
+  }
 }
 .language::before {
   position: relative;
@@ -237,18 +250,33 @@ a {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 999px) {
+  .make-grid {
+    display: grid;
+  }
+
+  .mobile-position {
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-header.login {
+    color: #000000;
+  }
+}
+
 .button-header.login {
   color: #ec0f16;
   transition: all 0.5s ease;
 }
+
 .button-header.login:hover {
   color: #cd1319;
 }
 
-@media screen and (min-width: 1024px) {
-  .button-header.login {
-    margin-bottom: 10px;
-  }
+.button-header.login {
+  margin-bottom: 10px;
 }
 
 .button-header.registration:hover {
@@ -284,9 +312,15 @@ a {
 .tel-link {
   font-weight: 700;
   color: #000000;
-  margin-right: 48px;
   transition: all 0.5s ease;
+  text-align: center;
 }
+@media screen and (min-width: 1199px) {
+  .tel-link {
+    margin-right: 48px;
+  }
+}
+
 .tel-link:hover {
   color: #cd1319;
 }
