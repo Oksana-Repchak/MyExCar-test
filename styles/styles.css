@@ -68,7 +68,7 @@ a {
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-bottom: 70px;
+  margin-bottom: 35px;
 }
 
 .padding-row {
@@ -86,7 +86,13 @@ a {
 }
 
 @media screen and (min-width: 1000px) {
+  .header {
+    margin-bottom: 70px;
+  }
   .wrapper-mobi-button {
+    display: none;
+  }
+  .button-search-mobi {
     display: none;
   }
 }
@@ -257,6 +263,11 @@ a {
   }
 }
 
+.button-header.login {
+  color: #ec0f16;
+  transition: all 0.5s ease;
+}
+
 @media screen and (max-width: 999px) {
   .make-grid {
     display: grid;
@@ -271,11 +282,6 @@ a {
   .button-header.login {
     color: #000000;
   }
-}
-
-.button-header.login {
-  color: #ec0f16;
-  transition: all 0.5s ease;
 }
 
 .button-header.login:hover {
@@ -351,7 +357,7 @@ a {
 .button-used {
   min-width: 220px;
   border: none;
-  padding: 15px 61px;
+  padding: 15px 21px;
   color: #ffff;
   background-color: #ec0f16;
   border-radius: 5px;
@@ -379,7 +385,7 @@ a {
 .button-sell {
   min-width: 220px;
   border: none;
-  padding: 15px 61px;
+  padding: 15px 20px;
   color: #ec0f16;
   background-color: transparent;
   border: 1px solid #ec0f16;
@@ -406,7 +412,7 @@ a {
 .hero-slogan {
   margin-bottom: 48px;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 12px;
   line-height: 1.23;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -424,10 +430,20 @@ a {
 
 .hero-title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #000000;
-  line-height: 1.31;
+  line-height: 1.51;
+  max-width: 290px;
+}
+
+@media screen and (min-width: 1000px) {
+  .hero-slogan {
+    font-size: 17px;
+  }
+  .hero-title {
+    min-width: 494px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -442,6 +458,10 @@ a {
   }
 }
 
+.move-left {
+  left: 10%;
+}
+
 .car-images {
   position: absolute;
   transition-property: transform;
@@ -453,9 +473,14 @@ a {
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 430px) {
   .car-images {
-    max-width: 259px;
+    max-width: 160px;
+  }
+}
+@media screen and (min-width: 431px) and (max-width: 999px) {
+  .car-images {
+    max-width: 260px;
   }
 }
 
@@ -469,7 +494,7 @@ a {
   left: 35%;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 999px) {
   .hero-list-link {
     font-weight: 600;
     font-size: 15px;
@@ -478,30 +503,28 @@ a {
 }
 
 .hero-list-link {
-  min-width: 427px;
-  padding: 35px 145px;
+  min-width: 290px;
+  padding: 12px 40px;
   background-color: rgba(10, 9, 9, 1);
-
   border-radius: 5px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.2em;
-
   color: #ffffff;
   transition: all 0.5s ease;
 }
 
-/* .car-animation {
-  background-color: #ffffff;
-
-  transition-property: transform;
+@media screen and (min-width: 1000px) {
+  .hero-list-link {
+    min-width: 427px;
+    padding: 35px 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
-
-.hero-list-link:hover .car-animation {
-  transform: scale(1.5);
-} */
 
 .hero-list-link:hover {
   color: #bdbdbd;
@@ -512,15 +535,18 @@ a {
   content: "";
   display: inline-block;
   bottom: 5px;
-  right: 150px;
+  right: 100px;
   height: 1px;
   width: 24px;
   background-color: #ec0f16;
 }
 
-@media screen and (min-width: 992px) {
-  .hero-list-link::before {
-    right: 50px;
+@media screen and (min-width: 1000px) {
+  .leasing::before {
+    right: 80px;
+  }
+  .auction::before {
+    right: 80px;
   }
 }
 
@@ -534,15 +560,14 @@ a {
   background-image: url("../images/leasing.jpg");
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 999px) {
   .leasing::before {
-    right: 130px;
+    right: 80px;
   }
   .auction::before {
-    right: 130px;
+    right: 80px;
   }
 }
-
 .auction {
   background-image: url("../images/auction.jpg");
 }
