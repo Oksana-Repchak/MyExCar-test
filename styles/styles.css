@@ -188,11 +188,13 @@ a {
   }
 }
 
+.language {
+  cursor: pointer;
+}
 .language::before {
   position: relative;
   content: "";
   display: inline-block;
-  /* min-width: 70px; */
   height: 2px;
   bottom: 5px;
   background-color: #000000;
@@ -213,6 +215,9 @@ a {
   font-weight: 700;
   color: #000000;
 }
+.lang-ru:hover {
+  color: #333333;
+}
 
 .button-header {
   margin: 0;
@@ -226,11 +231,18 @@ a {
 .button-header.login {
   color: #ec0f16;
 }
+.button-header.login:hover {
+  color: #cd1319;
+}
 
 @media screen and (min-width: 1024px) {
   .button-header.login {
     margin-bottom: 10px;
   }
+}
+
+.button-header.registration:hover {
+  color: #333333;
 }
 
 .search-form {
