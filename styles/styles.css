@@ -434,15 +434,11 @@ a {
   text-transform: uppercase;
   color: #000000;
   line-height: 1.51;
-  max-width: 290px;
 }
 
 @media screen and (min-width: 1000px) {
   .hero-slogan {
     font-size: 17px;
-  }
-  .hero-title {
-    min-width: 494px;
   }
 }
 
@@ -499,6 +495,9 @@ a {
     font-weight: 600;
     font-size: 15px;
     line-height: 1.6;
+  }
+  .hero-title {
+    max-width: 290px;
   }
 }
 
