@@ -167,9 +167,8 @@ a {
 .navigation-link::before {
   position: absolute;
   content: "";
-  bottom: 57px;
   display: block;
-  width: 100%;
+  width: 80%;
   height: 4px;
   background-color: #ec0f16;
   display: none;
@@ -183,8 +182,16 @@ a {
   color: #000000;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) {
   .navigation-link:hover.navigation-link::before {
+    bottom: -1px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .navigation-link:hover.navigation-link::before {
+    bottom: 57px;
     display: block;
   }
 }
@@ -387,6 +394,13 @@ a {
 
 .car-images {
   position: absolute;
+  transition-property: transform;
+  transition-duration: 1500ms;
+}
+
+.car-images:hover {
+  transform: rotate(10deg);
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 999px) {
