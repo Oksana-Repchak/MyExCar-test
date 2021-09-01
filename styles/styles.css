@@ -423,7 +423,7 @@ a {
   color: #ffffff;
 }
 
-.car-animation {
+/* .car-animation {
   background-color: #ffffff;
 
   transition-property: transform;
@@ -431,7 +431,7 @@ a {
 
 .hero-list-link:hover .car-animation {
   transform: scale(1.5);
-}
+} */
 
 .hero-list-link:hover {
   color: #bdbdbd;
