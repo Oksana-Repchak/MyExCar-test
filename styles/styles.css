@@ -264,6 +264,16 @@ a {
   color: #000000;
   margin-right: 48px;
 }
+.tel-link:hover {
+  color: #cd1319;
+}
+
+.tel-icon {
+  margin-right: 15px;
+}
+.tel-link:hover .tel-icon {
+  fill: #cd1319;
+}
 
 .button-used {
   min-width: 220px;
@@ -272,6 +282,12 @@ a {
   color: #ffff;
   background-color: #ec0f16;
   border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.button-used:hover {
+  background-color: #cd1319;
 }
 
 @media screen and (max-width: 1919px) {
@@ -293,7 +309,13 @@ a {
   color: #ec0f16;
   background-color: transparent;
   border: 1px solid #ec0f16;
+  font-weight: 600;
   border-radius: 5px;
+}
+
+.button-sell:hover {
+  color: #cd1319;
+  border-color: #cd1319;
 }
 
 /* __________Hero section___________ */
@@ -399,9 +421,9 @@ a {
   transform: scale(1.5);
 }
 
-/* .hero-list-link:hover {
+.hero-list-link:hover {
   color: #bdbdbd;
-} */
+}
 
 .hero-list-link::before {
   position: relative;
