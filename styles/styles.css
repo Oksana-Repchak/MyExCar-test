@@ -299,7 +299,7 @@ a {
 }
 
 @media screen and (max-width: 999px) {
-  .search-form {
+  .search-form-none {
     display: none;
   }
 }
